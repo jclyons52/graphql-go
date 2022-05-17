@@ -5,9 +5,10 @@ package graph
 
 import (
 	"context"
-	"go-graphql/db"
-	"go-graphql/graph/generated"
-	"go-graphql/graph/model"
+
+	"github.com/jclyons52/go-graphql/db"
+	"github.com/jclyons52/go-graphql/graph/generated"
+	"github.com/jclyons52/go-graphql/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {

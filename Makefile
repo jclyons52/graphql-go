@@ -1,5 +1,7 @@
 create-migration:
 	go run github.com/prisma/prisma-client-go migrate dev --name init
+migrate:
+	go run github.com/prisma/prisma-client-go migrate dev
 db-gen:
 	go run github.com/prisma/prisma-client-go generate
 gql-gen:
